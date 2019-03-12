@@ -19,8 +19,23 @@ img {
    height: auto;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
 .main-header {
-   background-color: #eeeeee;
+   background-color: #ffffff;
 }
 
 .main-menu {
@@ -40,6 +55,8 @@ img {
 .main-header-logo {
    width: 140px;
    height: 71px;
+   position: relative;
+   
    
 }
 .navigation-menu {
@@ -65,8 +82,245 @@ img {
 }
 
 .logo-welcome {
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 73px;
+   padding-right: 73px;
+   display: block;
+   justify-content: center;
+   align-content: center;
+   overflow: hidden;
+   position: relative;
+  
+}
+
+.logo-welcome::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 67px;
+    left: 445px;
+    width: 459px;
+    height: 353px;
+    background-image: url(../img/welcome.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.reasons {
+   text-align: center;
+   position: relative;
+}
+
+.reasons::after {
+   content: "";
+    display: block;
+    position: absolute;
+    top: -390px;
+    left: 352px;
+    width: 1201px;
+    height: 59px;
+    background-image: url(../img/polygon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.reasons::before {
+   content: "";
+    display: block;
+    position: absolute;
+    top: -332px;
+    left: 352px;
+    width: 1201px;
+    height: 216px;
+    background-image: url(../img/Layer14.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.reasons h2 {
+   font-size: 21px;
+   line-height: 26px;
+   text-transform: uppercase;
+   color: #000000;
+}
+.reasons p {
+   font-size: 14px;
+   line-height: 26px;
+   text-transform: uppercase;
+   color: #333333;
+}
+.main-city {
+   
+ display: flex;  
+}
+.city {
+   width: 1200px;
+   margin-left: 320px;
+   text-align: center;
+   width: 400px;
+   height: 258px;
+   background-color: #81b3d2;
+   position: relative;
+}
+.city h3 {
+   padding: 0;
+   margin: 0;
+   padding-top: 47px;
+   padding-bottom: 25px;
+   font-size: 21px;
+   line-height: 21px;
+   color: #ffffff;
+   text-transform: uppercase;
+}
+.city p {
+   margin: 0;
+   padding: 0;
+    padding-bottom: 25px;
+   font-size: 13px;
+   line-height: 21px;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+.catalog {
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 73px;
+   padding-right: 73px;
+   
+}
+.catalog-list {
+   display: flex;
+   justify-content: space-between;
+   padding-left: 0;
+   padding-right: 0;
+   margin-top: 60px;
+}
+
+.catalog-items {
+   
+   display: block;
+   justify-content: center;
+   width: 400px;
+   text-decoration: none;
+   list-style: none;
+   
+}
+
+.catalog-items img {
+   
+   margin-bottom: 30px;
+   display: block;
+   justify-content: center;
+}
+
+.catalog-items b {
+   margin-left: 182px;
+   font-size: 21px;
+   line-height: 21px;
+   font-weight: 700;
+   text-transform: uppercase;
+  
+}
+.catalog-items p {
+   margin-left: 87px;
+   font-size: 14px;
+   line-height: 21px;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+.lg {
+   margin-left: 174px;
+}
+
+.main-most {
    display: flex;
    justify-content: center;
-   padding-top: 77px;
-   background-color: #daebf3;
+   padding: 0;
+   margin: 0;
+   margin-bottom: -4px;
+  
 }
+.most {
+   width: 1200px;
+   margin-left: 320px;
+   text-align: center;
+   width: 400px;
+   height: 258px;
+   background-color: #81b3d2;
+   position: relative;
+   padding: 0;
+   margin: 0;
+   
+}
+
+.most h3 {
+   padding: 0;
+   margin: 0;
+   padding-top: 47px;
+   padding-bottom: 25px;
+   font-size: 21px;
+   line-height: 21px;
+   color: #ffffff;
+   text-transform: uppercase;
+}
+.most p {
+   margin: 0;
+   padding: 0;
+    padding-bottom: 25px;
+   font-size: 13px;
+   line-height: 21px;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+.advantages {
+   width: 1200px;
+   
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 73px;
+   padding-right: 73px;
+   
+}
+
+.advantages-list {
+   height: 230px;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: space-between;
+   background-color: #eeeeee;
+}
+
+.advantages-items {
+   
+   margin-top: 56px;
+   list-style: none;
+    text-align: center;
+}
+
+.advantages-items b {
+   
+   text-transform: uppercase;
+   font-size: 21px;
+   line-height: 21px;
+   font-weight: 700;
+    
+}
+
+.advantages-items p {
+   margin-top: 29px;
+   text-transform: uppercase;
+   font-size: 14px;
+   line-height: 21px;
+   font-weight: 400;
+   
+}
+
